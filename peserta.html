@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Peserta - d'education</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>d'<span>education</span></h1></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="daftar.html">Daftar Kelas</a></li>
+                <li><a href="peserta.html">Data Peserta</a></li>
+                <li><a href="kuis.html">Kuis</a></li>
+                <li><a href="kontributor.html">Tim Kami</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle">🌙</button>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Data Peserta Terdaftar</h2>
+
+        <section class="stats-grid">
+            <div class="stat-card"><h3 id="stat-total">0</h3><p>Total Peserta</p></div>
+            <div class="stat-card"><h3 id="stat-laki">0</h3><p>Laki-laki</p></div>
+            <div class="stat-card"><h3 id="stat-perempuan">0</h3><p>Perempuan</p></div>
+        </section>
+
+        <section class="container">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Umur</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Kelas</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabel-peserta-body"></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7" style="text-align: center; font-weight: bold;">
+                                * Data disimpan menggunakan LocalStorage browser.
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="daftar.html" class="btn-primary">Tambah Peserta Baru</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 d'education. Dibuat untuk Tugas UAS Pemrograman Web I - UNSIA.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

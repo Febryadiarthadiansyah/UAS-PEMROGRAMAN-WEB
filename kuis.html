@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif - d'education</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>d'<span>education</span></h1></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="daftar.html">Daftar Kelas</a></li>
+                <li><a href="peserta.html">Data Peserta</a></li>
+                <li><a href="kuis.html">Kuis</a></li>
+                <li><a href="kontributor.html">Tim Kami</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle">🌙</button>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Kuis Pemrograman Web Dasar</h2>
+        
+        <section class="kuis-container">
+            <form id="form-kuis">
+                <div class="soal-item">
+                    <p>1. Apa kepanjangan dari HTML?</p>
+                    <label><input type="radio" name="soal1" value="a"> HyperText Markup Language</label>
+                    <label><input type="radio" name="soal1" value="b"> HighText Machine Language</label>
+                    <label><input type="radio" name="soal1" value="c"> Hyperlinks and Text Markup Language</label>
+                    <label><input type="radio" name="soal1" value="d"> Home Tool Markup Language</label>
+                </div>
+
+                <div class="soal-item">
+                    <p>2. Tag HTML manakah yang digunakan untuk membuat paragraf?</p>
+                    <label><input type="radio" name="soal2" value="a"> &lt;p&gt;</label>
+                    <label><input type="radio" name="soal2" value="b"> &lt;para&gt;</label>
+                    <label><input type="radio" name="soal2" value="c"> &lt;paragraph&gt;</label>
+                    <label><input type="radio" name="soal2" value="d"> &lt;text&gt;</label>
+                </div>
+
+                <div class="soal-item">
+                    <p>3. Properti CSS apa yang digunakan untuk mengubah warna teks?</p>
+                    <label><input type="radio" name="soal3" value="a"> text-color</label>
+                    <label><input type="radio" name="soal3" value="b"> font-color</label>
+                    <label><input type="radio" name="soal3" value="c"> color</label>
+                    <label><input type="radio" name="soal3" value="d"> background-color</label>
+                </div>
+
+                <div class="soal-item">
+                    <p>4. Bagaimana cara menulis komentar di JavaScript?</p>
+                    <label><input type="radio" name="soal4" value="a"> &lt;!-- Komentar --&gt;</label>
+                    <label><input type="radio" name="soal4" value="b"> // Komentar</label>
+                    <label><input type="radio" name="soal4" value="c"> # Komentar</label>
+                    <label><input type="radio" name="soal4" value="d"> /* Komentar */</label>
+                </div>
+
+                <div class="soal-item">
+                    <p>5. Metode JavaScript manakah yang digunakan untuk menulis output ke console?</p>
+                    <label><input type="radio" name="soal5" value="a"> console.write()</label>
+                    <label><input type="radio" name="soal5" value="b"> print()</label>
+                    <label><input type="radio" name="soal5" value="c"> echo()</label>
+                    <label><input type="radio" name="soal5" value="d"> console.log()</label>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">Submit Jawaban</button>
+            </form>
+
+            <div id="hasil-kuis">
+                <h3 id="teks-nilai" style="font-size: 32px; margin-bottom: 15px; font-weight: 700;"></h3>
+                <p id="teks-feedback" style="font-size: 18px; margin-bottom: 20px;"></p>
+                <button id="btn-retry" class="btn-primary">Ulangi Kuis</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 d'education. Dibuat untuk Tugas UAS Pemrograman Web I - UNSIA.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

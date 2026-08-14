@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Pengembang - d'education</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><h1>d'<span>education</span></h1></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="daftar.html">Daftar Kelas</a></li>
+                <li><a href="peserta.html">Data Peserta</a></li>
+                <li><a href="kuis.html">Kuis</a></li>
+                <li><a href="kontributor.html">Tim Kami</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle">🌙</button>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Tim Pengembang Aplikasi</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: gray;">
+            Aplikasi d'education dibangun dengan kolaborasi oleh mahasiswa PJJ Informatika UNSIA sebagai pemenuhan Tugas UAS Pemrograman Web I. Berikut adalah tim di balik pengembangan aplikasi ini.
+        </p>
+
+        <section class="container">
+            <div class="grid-box" style="grid-template-columns: repeat(auto-fit, minmax(300px, max-content)); justify-content: center;">
+                
+                <!-- Kartu Kontributor 1 -->
+                <div class="card" style="text-align: center; padding: 40px; width: 100%; max-width: 350px;">
+                    <div style="width: 120px; height: 120px; background: var(--primary-color); color: var(--text-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 42px; font-weight: 700; margin: 0 auto 20px; border: 4px solid var(--secondary-color);">
+                        FAD
+                    </div>
+                    <h4 style="font-size: 22px; margin-bottom: 5px;">Febryadi Artha Diansyah</h4>
+                    <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 15px;">NIM: 250401010404</p>
+                    <p style="font-size: 14px; color: gray;">Lead Developer & System Architect</p>
+                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 13px;">
+                        <p>Bertanggung jawab atas arsitektur sistem, logika JavaScript (DOM, LocalStorage), dan integrasi fitur kuis interaktif.</p>
+                    </div>
+                </div>
+
+                <!-- Kartu Kontributor 2 -->
+                <div class="card" style="text-align: center; padding: 40px; width: 100%; max-width: 350px;">
+                    <div style="width: 120px; height: 120px; background: var(--primary-color); color: var(--text-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 42px; font-weight: 700; margin: 0 auto 20px; border: 4px solid var(--secondary-color);">
+                        AAP
+                    </div>
+                    <h4 style="font-size: 22px; margin-bottom: 5px;">Andes Agus Prakorso</h4>
+                    <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 15px;">NIM: 250401010430</p>
+                    <p style="font-size: 14px; color: gray;">Frontend & UI/UX Designer</p>
+                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 13px;">
+                        <p>Bertanggung jawab atas desain antarmuka (CSS), responsivitas mobile, fitur Dark Mode, dan penyusunan konten multimedia.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 d'education. Dibuat untuk Tugas UAS Pemrograman Web I - UNSIA.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
